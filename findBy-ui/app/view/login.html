@@ -1,0 +1,25 @@
+<div class="buttondemoBasicUsage">
+    <md-content>
+        <div class="padding-top-70" layout="column" layout-sm="column" layout-align="center center" layout-wrap="">
+            <div class="row">
+                <md-input-container>
+                    <label>User Name</label>
+                    <input ng-model="login.entity.userName">
+                </md-input-container>
+            </div>
+            <div class="row">
+                <md-input-container>
+                    <label>Password</label>
+                    <input type="password" ng-model="login.entity.password">
+                </md-input-container>
+            </div>
+            <div class="row">
+                <md-button md-no-ink="" class="md-raised md-primary" ng-click="login.login(login.entity)">Login</md-button>
+                <md-button class="md-raised" ng-click="login.cancel()">Cancel</md-button>
+            </div><br>
+            <div class="row">
+                <span  ng-click="login.navigateToSignup()">Don't have account? Sign up here</span>
+            </div>
+        </div>
+    </md-content>
+</div>

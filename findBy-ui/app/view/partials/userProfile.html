@@ -1,0 +1,52 @@
+<div class="row">
+    <md-content>
+        <div class="row">
+            <div class="col-md-6" ng-if="!profile.editMode">
+                <a class="bold">First Name: </a>{{profile.entity.firstName}}
+            </div>
+            <div class="col-md-6" ng-if="profile.editMode">
+                <md-input-container>
+                    <input type="text" ng-model="profile.entity.firstName">
+                </md-input-container>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" ng-if="!profile.editMode">
+                <a class="bold">Last Name: </a>{{profile.entity.lastName}}
+            </div>
+            <div class="col-md-6" ng-if="profile.editMode">
+                <md-input-container>
+                    <input type="text" ng-model="profile.entity.lastName">
+                </md-input-container>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" ng-if="!profile.editMode">
+                <a class="bold">Email : </a>{{profile.entity.email}}
+            </div>
+            <div class="col-md-6" ng-if="profile.editMode">
+                <md-input-container>
+                    <input type="text" ng-model="profile.entity.email">
+                </md-input-container>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6" ng-if="!profile.editMode">
+                <a class="bold">Date Of Birth : </a>{{profile.entity.dob | date:"yyyy-MM-dd"}}
+            </div>
+            <div class="col-md-6" ng-if="profile.editMode">
+                <md-input-container>
+                    <md-datepicker ng-model="profile.entity.dob"></md-datepicker>
+                </md-input-container>
+            </div>
+        </div>
+        <div class="row handPointer">
+            <span ng-click="profile.resetPassword($event)">Reset Password</span>
+        </div>
+        <span class="handPointer rightMargin" ng-if="!profile.editMode" ng-click="profile.showEdit()">Edit</span>
+        <div class="row" ng-if="profile.editMode">
+            <md-button md-no-ink="" class="md-raised md-primary" ng-click="profile.updateDetails(profile.entity)">Submit</md-button>
+            <md-button class="md-raised" ng-click="profile.editMode=false">Cancel</md-button>
+        </div>
+    </md-content>
+</div>

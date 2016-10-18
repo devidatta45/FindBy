@@ -1,0 +1,28 @@
+{
+  "name": "salesanddistribution",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.5.7",
+    "restangular": "1.5.2",
+    "underscore": "1.8.3",
+    "ui-router": "0.3.0",
+    "angular-ui-router": "0.2.15",
+    "angular-material": "1.1.1",
+    "angular-fontawesome": "1.0.0",
+    "leaflet": "0.7.7",
+    "angular-leaflet-directive": "latest"
+  },
+  "authors": [
+    "CloudJet Labs <developer@cloudjetlabs.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "angular": "1.5.7"
+  }
+}

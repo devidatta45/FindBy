@@ -1,0 +1,46 @@
+ *.class
+*.log
+*.zip
+*.gz
+*.idea
+
+# sbt specific
+.settings/
+.cache/
+.history/
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.project
+.classpath
+.cache
+
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# IntelliJ IDEA specific
+**/.idea/
+**/target/
+**/*.iml
+
+.tscache/
+findBy-ui/app/node_modules/
+findBy-ui/app/bower_components/
+findBy-ui/app/types/
+
+!**/*.sln
+*/*.sln.
+**/*.suo
+*/*.csproj.
+!**/*.csproj
+**/*.config
+*/*.config.
+**/obj
+**/bin
+**/*.tmp.txt

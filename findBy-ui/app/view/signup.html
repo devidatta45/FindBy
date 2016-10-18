@@ -1,0 +1,39 @@
+<div class="padding-top-50" layout="column" layout-sm="column" layout-align="center center" layout-wrap="">
+    <h1>Sign Up</h1>
+    <div layout="column" class="md-inline-form">
+        <div layout-gt-sm="row">
+            <md-input-container>
+                <label>First Name</label>
+                <input ng-model="signup.entity.firstName">
+            </md-input-container>
+        </div>
+        <div layout-gt-sm="row">
+            <md-input-container>
+                <label>Last Name</label>
+                <input ng-model="signup.entity.lastName">
+            </md-input-container>
+        </div>
+        <div layout-gt-sm="row">
+            <md-input-container>
+                <label>Email</label>
+                <input ng-model="signup.entity.email">
+            </md-input-container>
+        </div>
+        <div layout-gt-sm="row">
+            <md-input-container>
+                <label>User Name</label>
+                <input ng-model="signup.entity.userName">
+            </md-input-container>
+        </div>
+        <div layout-gt-sm="row">
+            <md-input-container>
+                <label>Date of Birth</label>
+                <md-datepicker ng-model="signup.entity.dob"></md-datepicker>
+            </md-input-container>
+        </div>
+        <div class="row">
+                <md-button md-no-ink="" class="md-raised md-primary" ng-click="signup.signUpUser(signup.entity)">SignUp</md-button>
+                <md-button class="md-raised" ng-click="signup.cancel()">Cancel</md-button>
+        </div>
+    </div>
+</div>

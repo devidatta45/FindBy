@@ -1,0 +1,25 @@
+<div>
+    <md-content>
+        <div class="row">
+            <span class="handPointer pull-right" ng-click="profile.logOut()">Logout</span>
+            <h4 align="left" class="padding-left-10">Welcome {{profile.entity.userName}}</h4>
+        </div>
+        <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab label="profile">
+                <md-content class="md-padding">
+                    <div ng-include="'view/partials/userProfile.html'"></div>
+                </md-content>
+            </md-tab>
+            <md-tab label="activity">
+                <md-content class="md-padding">
+                    <div ng-include="'view/partials/activity.html'"></div>
+                </md-content>
+            </md-tab>
+            <md-tab label="suggestion">
+                <md-content class="md-padding">
+                    <div ng-include="'view/partials/suggestion.html'"></div>
+                </md-content>
+            </md-tab>
+        </md-tabs>
+    </md-content>
+</div>

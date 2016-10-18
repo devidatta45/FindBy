@@ -1,0 +1,10 @@
+  <div>
+        <div>
+            <button data-ng-click="app.getResponseFromServer()">Get Response</button>
+        </div>
+        <div>
+            <select ng-if="app.showDropdown" ng-model="item.id" ng-options="item.id as item.hotel for item in app.data" ng-change="app.showId(item.id)" >
+
+            </select>
+        </div>
+ </div>
