@@ -1,5 +1,5 @@
 {
-  "name": "salesanddistribution",
+  "name": "findby",
   "version": "0.0.1",
   "dependencies": {
     "angular": "1.5.7",
@@ -13,7 +13,7 @@
     "angular-leaflet-directive": "latest"
   },
   "authors": [
-    "CloudJet Labs <developer@cloudjetlabs.com>"
+    "Devidatta <devidatta45@gmail.com>"
   ],
   "ignore": [
     "**/.*",
