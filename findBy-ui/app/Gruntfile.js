@@ -43,13 +43,7 @@ module.exports = function (grunt) {
     // load the task
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks("grunt-ts");
-    grunt.loadNpmTasks("grunt-karma");
-    grunt.loadNpmTasks("grunt-contrib-copy");
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-injector');
-    grunt.loadNpmTasks('grunt-replace');
-    grunt.loadNpmTasks('grunt-processhtml');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-html2js');
 
