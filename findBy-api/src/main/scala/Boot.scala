@@ -94,6 +94,23 @@ trait CORSSupport extends Directives {
   }
 }
 
+object Df extends App {
+  val dd = "aabcccdee"
+  var result = ""
+  val list = dd.toList
+  list.zipWithIndex.foreach(x => {
+    if (x._2 < list.size-1) {
+      if (list(x._2) == list(x._2 + 1) || list(x._2) == list(x._2 - 1)) {
+
+      }
+      else{
+        result=result+x._1
+      }
+    }
+  })
+  println(result)
+}
+
 object JsonImplicits {
   def toJson(value: Any): String = {
     if (value.isInstanceOf[String]) value.asInstanceOf[String] else convertToJValue(value)
